@@ -23,7 +23,7 @@ def status_callback(client, userdata, message):
     if last_topic == "state":
 
         # Return a status message
-        status_message = f"{device_id} is Ok"
+        status_message = f"{device_id} is Happy and Ok"
         client.publish(topic, status_message)
 
     print("status_message: " + status_message)
